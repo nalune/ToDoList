@@ -65,9 +65,7 @@ html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h
 address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
 	display: block;
 }
-html {
-	background: rgb(65, 64, 66);
-}
+
 body {
 	font: 100% DroidSans, Arial, Helvetica, sans-serif;
 	line-height: 1.5;
@@ -107,17 +105,21 @@ em {
 
 /*layout styles*/ 
 body {
-	width: 960px;
+	width: 1250px;
 	position: relative;
 	margin: 0 auto;
+	
+	
 }
 article#mainContent {
-	float: left;
+	position: relative;
 	background: white;
 	width: 100%;
-	height: 500px;
-	margin-top: 3px;
-	padding: 16px;
+	margin: 0 auto;
+	padding: 16px 0;
+	height: 650px;
+	background-color: #FFF7C0;
+	
 }
 article#spotlight {
 	margin-bottom: 0;
@@ -127,46 +129,9 @@ footer {
 	clear: both;
 }
 
-/*Header styles*/
-.pageHeader h1{
-	width: 160px;
-	height: 150px;
-	text-indent: -9000em;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: 5;
-	margin: 0;
-}
-.pageHeader h1 a {
-	display: block;
-	width: 160px;
-	height: 150px;
-	margin: 0;
-}
-
-/*page-specific header styles*/
-
 .blogHeader {
-	height: 192px;
-	background-color: yellow;
-}
-p.branding {
-	background: rgba(35, 31, 32, .8);
-	text-align: right;
-	margin-top: 32px;
-	width: 200px;
-	padding: 1.2em 1em;
-	color: white;
-	float: right;
-	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
-	font-size: 1.27em;
-	line-height: 1.6;
-}
-p.branding a {
-	color: rgb(249, 228, 130);
-	line-height: normal;
-	text-transform: capitalize;
+	height: 100px;
+	background-color: #86AC97;
 }
 
 
@@ -175,8 +140,9 @@ article h1 {
 	font-family: Bitter, Georgia, "Times New Roman", Times, serif;
 	font-weight: bold;
 	font-size: 2.8em;
-	color: rgb(168, 88, 163);
+	color: #56416C;
 	margin-bottom: .5em;
+	text-align:center;
 }
 article h2 {
 	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
@@ -184,6 +150,7 @@ article h2 {
 	color: rgb(65, 64, 66);
 	margin-bottom: .5em;
 	clear: both;
+	text-align:center;
 }
 article h3 {
 	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
@@ -298,7 +265,7 @@ select[multiple]{
 }
 /*footer styles	*/
 footer#pageFooter {
-	background: rgb(249, 228, 130);
+	background-color: #72697E;;
 	color: rgb(65, 64, 66);
 	padding: 32px 0 16px;
 }
@@ -317,78 +284,13 @@ footer p {
 footer p a{
 	color: rgb(65, 64, 66);
 	text-decoration: underline;
-}
-footer ul a{
-	color: rgb(65, 64, 66);
-}
-footer a:hover {
-	color: rgb(2, 99, 174);
-}
-footer .col {
-	float: left;
-	width: 286px;
-	border-right: 2px solid rgba(191, 191, 191, .8);
-	margin-bottom: 1em;
-	padding-left: 32px;
-}
-footer .col:last-child {
-	border: none;
-}
-footer ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	font-size: .6em;
-}
-footer li {
-	margin-bottom: 1em;
-}
-footer .col1 {
-	float: left;
-	width: 130px;
-}
-footer .col2 {
-	float: right;
-	width: 130px;
-}
-.alignleft {
-	float: left;
-	padding-right: 15px;
-	padding-bottom: 5px;	
-}
-.alignright {
-	float: right;
-	padding-left: 15px;
-	padding-bottom: 5px;	
-}
+
 #blogPage #contentWrapper {
 	
-	width: 960px;
+	width: 100%;
 	overflow: hidden;
 }
-#blogPage aside ul {
-	margin: 1em 1.2em 1em;
-	padding-left: 0.6em;
-}
-#blogPage aside ul li {
-	list-style: square;
-	margin-bottom: 0px;
-	color: #fff;
-}
-#blogPage .widget {
-	padding-bottom: 80px;
-}
-#blogPage aside a {
-	display: block;
-}
-#blogPage aside a:link, #blogPage aside a:visited {
-	background: #A858A3;
-	color: #FFF;
-}
-#blogPage aside a:hover, #blogPage aside a:active {
-	background: url(../_images/diag_pattern.png);
-	color: #FBAE2C;
-}
+
 /* Phone */
 @media screen and (max-width: 320px) {
 	body, #outerWrapper {
@@ -479,15 +381,4 @@ div.lastOne {
 }
 [draggable=true] {
 	cursor: move;
-}
-#favorites {
-	height:100%;
-}
-#favorites p {
-	font-size: 36px;
-	color: #999;
-	text-align: center;
-	padding: 15px 30px;
-	border: 6px dashed #999;
-	margin-top:  1em;
 }

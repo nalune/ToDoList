@@ -39,7 +39,7 @@ a:link {
     list-style-type: none;
     font-size: 24px;
     cursor: move;
-    background-color: #efefef;
+    background-color: white;
     margin-bottom: 5px;
     padding: 10px;
     text-align: left;
@@ -52,7 +52,7 @@ a:link {
     float: right;
     display: none;
     text-decoration: none;
-    color: #f03;
+    color: #72697E;
 }
 #container ul li a:hover {
     text-decoration: underline;
