@@ -66,6 +66,11 @@ address, article, aside, canvas, details, figcaption, figure, footer, header, hg
 	display: block;
 }
 
+html
+{
+	background-image: url(../_images/p6.png);
+}
+
 body {
 	font: 100% DroidSans, Arial, Helvetica, sans-serif;
 	line-height: 1.5;
@@ -131,7 +136,8 @@ footer {
 
 .blogHeader {
 	height: 100px;
-	background-color: #86AC97;
+	background: url(../_images/pattern.png);
+	margin-top: 1rem;
 }
 
 

@@ -39,10 +39,11 @@ a:link {
     list-style-type: none;
     font-size: 24px;
     cursor: move;
-    background-color: white;
+    background-color: #FCFBE3;
     margin-bottom: 5px;
     padding: 10px;
     text-align: left;
+	border: 1px solid black;
 }
 #container ul li span {
     cursor: text;
